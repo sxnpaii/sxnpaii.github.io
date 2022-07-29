@@ -267,9 +267,11 @@
     #portfolio {
         padding-bottom: 70px;
     }
-    #portfolio .container .row .col-12{
+
+    #portfolio .container .row .col-12 {
         min-height: 180px;
     }
+
     #portfolio .intro {
         margin-bottom: 70px;
     }
@@ -320,7 +322,7 @@
         /* width: 1140px; */
     }
 
-    
+
     #Works .col-md-6 {
         margin-bottom: 20px;
     }
@@ -330,69 +332,20 @@
         transition: 300ms ease-out;
     }
 
-    #Works .col img:hover {
-        filter: none;
 
-
-
-    }
 
     #Works .mySwiper, #Works .swiper-slide {
-        max-width: 850px;
+        max-width: 900px;
+        width: 100%;
         margin: auto;
         justify-content: center;
-    }
-    @media (min-width:340px) and  (max-width:380px){
-        #Works .mySwiper, #Works .swiper-slide {
-            width: 270px;
-        }
-    }
-     
-    @media (min-width:380px) and (max-width:440px) {
-        #Works .mySwiper, #Works .swiper-slide {
-            width: 270px;
-        }
-    }
-    @media (min-width:440px) and (max-width:500px) {
-        #Works .mySwiper, #Works .swiper-slide {
-            width: 280px;
-        }
-    }
-    @media (min-width:500px) and (max-width:576px) {
-        #Works .mySwiper, #Works .swiper-slide {
-            width: 410px;
-        }
-    }
-    @media (min-width:576px) {
-        #Works .mySwiper, #Works .swiper-slide {
-            width: 450px;
-        }
-    }
-    @media (min-width:700px) and (max-width:768px) {
-        #Works .mySwiper, #Works .swiper-slide {
-            width: 580px;
-        }
-    }
-    @media (min-width:768px) {
-        #Works .mySwiper, #Works .swiper-slide {
-            width: 650px;
-        }
 
-    }
-    @media (min-width:992px) {
-        #Works .mySwiper, #Works .swiper-slide {
-            width: 850px;
-        }
 
     }
 
-    /*
-  
-    */
 
-    
 
- 
+
 
     /* footer */
 
@@ -411,21 +364,24 @@
     }
 
 
-    section#footer{
-        padding-top:70px ;
+    section#footer {
+        padding-top: 70px;
         padding-bottom: 0;
     }
-    section#portfolio{
-        padding-bottom:70px ;
 
-    }   
+    section#portfolio {
+        padding-bottom: 70px;
+
+    }
+
     @media (min-width:380px) and (max-width:768px) {
-        section#footer{
-            padding-top:70px ;
+        section#footer {
+            padding-top: 70px;
             padding-bottom: 0;
         }
-        section#portfolio{
-            padding-bottom:70px ;
+
+        section#portfolio {
+            padding-bottom: 70px;
 
         }
     }
