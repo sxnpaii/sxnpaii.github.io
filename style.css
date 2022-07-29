@@ -350,12 +350,12 @@
      
     @media (min-width:380px) and (max-width:440px) {
         #Works .mySwiper, #Works .swiper-slide {
-            width: 290px;
+            width: 270px;
         }
     }
     @media (min-width:440px) and (max-width:500px) {
         #Works .mySwiper, #Works .swiper-slide {
-            width: 330px;
+            width: 280px;
         }
     }
     @media (min-width:500px) and (max-width:576px) {
