@@ -332,9 +332,8 @@
         transition: 300ms ease-out;
     }
 
-
-
-    #Works .mySwiper, #Works .swiper-slide {
+    #Works .mySwiper,
+    #Works .swiper-slide {
         max-width: 900px;
         width: 100%;
         margin: auto;
@@ -343,8 +342,34 @@
 
     }
 
+    #Works .swiper-slide {
+        position: relative;
+        cursor: pointer;
 
 
+    }
+
+    #Works .swiper-slide a button {
+        width: 100%;
+        height: 100%;
+        border: none;
+        background: var(--dark);
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-family: "Barlow", sans-serif;
+        font-size: 30px;
+        color: var(--white);
+        transition: 330ms;
+        cursor: pointer;
+
+
+    }
+
+    #Works .swiper-slide a button:hover {
+        opacity: 0.8;
+    }
 
 
     /* footer */

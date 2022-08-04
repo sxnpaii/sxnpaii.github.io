@@ -1,17 +1,20 @@
+
 var swiper = new Swiper(".mySwiper", {
-  effect: "coverflow",
   grabCursor: true,
-  centeredSlides: true,
-  slidesPerView: "auto",
-  coverflowEffect: {
-    rotate: 50,
-    stretch: 0,
-    depth: 100,
-    modifier: 1,
-    slideShadows: true,
+  effect: "creative",
+  creativeEffect: {
+    prev: {
+      shadow: true,
+      translate: [0, 0, -400],
+    },
+    next: {
+      translate: ["100%", 0, 0],
+    },
   },
   autoplay: {
     delay: 2500,
     disableOnInteraction: false,
   },
 });
+
+
