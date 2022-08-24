@@ -472,7 +472,7 @@
 
 
     #particles-js {
-        min-height: 100vh;
+        height: 100vh;
         width: 100%;
         position: absolute;
         top: 0;
@@ -481,7 +481,4 @@
         /* visibility: hidden; */
     }
 
-    #particles-js canvas {
-        /* width: 100%; */
-       /* min-height: 700px !important; */
-    }
+   
