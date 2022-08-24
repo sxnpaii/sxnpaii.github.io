@@ -1,5 +1,5 @@
   HELLO!!
   
-  this is my own portfolio-site for you !!
+  this is my own portfolio-site !!
   
   pls rate my works ...
