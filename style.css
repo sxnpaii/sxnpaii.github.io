@@ -2,9 +2,9 @@
 
     :root {
         --white: #ffffff;
-        --body: #545d6d;
-        --dark: #202631;
-        --border-color: rgba(0, 0, 0, 0.10);
+        --body: #a9a9a9;
+        --dark: #222222;
+        --border-color: rgba(255, 255, 255, 0.1);
         --border-width: 1px;
         --border-radius: 30px;
         /* neon effect for li links */
@@ -16,6 +16,8 @@
         font-family: "Barlow", sans-serif;
         line-height: 1.8;
         color: var(--body);
+        background: url(./img/bkg_sxnpaii.jpg) no-repeat fixed;
+        background-size: cover;
     }
 
     h1,
@@ -25,11 +27,17 @@
     h5,
     h6 {
         font-weight: 800;
-        color: var(--dark);
+        color: var(--white);
+        opacity: .9;
+    }
+
+    p {
+        color: var(--white);
+        opacity: .9;
     }
 
     a {
-        color: var(--body);
+        color: var(--dark);
         text-decoration: none;
         transition: all 0.4s ease;
         font-weight: 700;
@@ -46,6 +54,9 @@
     section {
         padding-top: 170px;
         padding-bottom: 170px;
+        background: var(--dark);
+        z-index: 10;
+        overflow: hidden;
     }
 
     /* navbar */
@@ -56,17 +67,30 @@
         padding-top: 16px;
         padding-bottom: 16px;
         z-index: 9999;
+        position: fixed;
+
+        backdrop-filter: blur(5px);
+        align-items: center;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), rgba(0, 0, 0, 0.3);
+
     }
+
+    .navbar * {
+        filter: none !important;
+    }
+
+    @media (max-width: 992px) {}
 
     .navbar-brand {
         font-size: 28px;
         text-transform: uppercase;
+
     }
 
     .navbar .navbar-nav .nav-link {
         text-transform: uppercase;
         font-size: 14px;
-        /* neon effect */
+
     }
 
     .social-links a {
@@ -82,18 +106,38 @@
     }
 
     @media (max-width: 992px) {
-        .navbar {
-            background-color: rgba(8, 7, 7, 0.845);
+
+
+        .navbar,
+        .navbar .container {
+            height: 60px;
+            padding-top: 0;
         }
+
+
+
+        .collapse .navbar-nav {
+            padding: 0 0 15 15px;
+        }
+
     }
 
     /* hero */
 
     #hero {
-        background-image: url(./img/bkg_sxnpaii.jpg);
+        background: none;
         min-height: 100vh;
-        background-position: center;
-        background-size: cover;
+        position: relative;
+
+
+    }
+
+    #hero .container {
+        z-index: 9999;
+        position: absolute;
+        top: 20%;
+        left: 6%;
+       padding-right: 20px;
     }
 
     @media (max-width:580px) {
@@ -102,7 +146,7 @@
         }
 
         #hero .col-lg-6 {
-            padding-top: 150px;
+            padding-top: 50px;
             /* padding-left: 40px; */
         }
     }
@@ -110,6 +154,7 @@
     #hero h1,
     #hero p {
         color: var(--white);
+        cursor: text;
     }
 
     #hero h1 {
@@ -120,6 +165,7 @@
     #hero p {
         font-size: 18px;
         max-width: 450px;
+        /* text-align: justify; */
     }
 
     /* btn */
@@ -131,6 +177,11 @@
         font-size: 14px;
         font-weight: 700;
         text-transform: uppercase;
+        cursor: pointer;
+    }
+
+    #hero .row {
+        z-index: 999;
     }
 
     /* intro */
@@ -172,7 +223,9 @@
         border: var(--border-width) solid var(--border-color);
         border-radius: var(--border-radius);
         display: flex;
+        align-items: center;
         padding: 32px;
+
     }
 
     .service .icon {
@@ -189,18 +242,7 @@
         margin-right: 16px;
     }
 
-    @media (max-width:450px) {
-        .service .icon {
-            margin-top: 30px;
-        }
-    }
-
-    @media (max-width:335px) {
-        .service .icon {
-            margin-top: 90px;
-        }
-    }
-
+   
     .link-arrow {
         text-transform: uppercase;
         display: flex;
@@ -250,6 +292,16 @@
     }
 
     /* about */
+    #about {
+        background: rgba(161, 161, 161, 0.5);
+        backdrop-filter: blur(3px);
+
+
+    }
+
+    #about * {
+        color: var(--white);
+    }
 
     #about img {
         border-radius: var(--border-radius);
@@ -415,4 +467,21 @@
         section {
             padding: 100px 0;
         }
+    }
+
+
+
+    #particles-js {
+        min-height: 100vh;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        cursor: default;
+        z-index: 0;
+        /* visibility: hidden; */
+    }
+
+    #particles-js canvas {
+        /* width: 100%; */
+       /* min-height: 700px !important; */
     }
