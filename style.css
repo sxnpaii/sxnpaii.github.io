@@ -19,6 +19,11 @@
         background: url(./img/bkg_sxnpaii.jpg) no-repeat fixed;
         background-size: cover;
     }
+    @media (max-width:580px) {
+        body {
+            background: url("./img/bkg_sxnpaii580px.jpg") top fixed no-repeat;
+        }
+    }
 
     h1,
     h2,
@@ -44,7 +49,7 @@
     }
 
     a:hover {
-        color: var(--dark);
+        color: var(--body);
     }
 
     img {
@@ -141,9 +146,7 @@
     }
 
     @media (max-width:580px) {
-        #hero {
-            background: url("./img/bkg_sxnpaii580px.jpg") top no-repeat;
-        }
+    
 
         #hero .col-lg-6 {
             padding-top: 50px;
@@ -265,7 +268,7 @@
         color: white;
     }
 
-    /* wrok */
+    /* work */
 
     #work {
         background-color: var(--dark);
@@ -371,6 +374,8 @@
         position: relative;
         padding: 0;
         margin: auto;
+        
+
         /* width: 1140px; */
     }
 
