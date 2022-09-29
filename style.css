@@ -298,7 +298,6 @@
     /* about */
     #about {
         background: var(--white);
-        height: 100vh;
         /* backdrop-filter: blur(3px); */
 
 
